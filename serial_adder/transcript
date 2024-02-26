@@ -1,0 +1,199 @@
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project Serial Adder
+# Compile of dff.sv was successful.
+# Compile of fa.sv was successful.
+# Compile of fsm.sv was successful.
+# Compile of piso.sv was successful.
+# Compile of serial_adder.sv was successful.
+# Compile of sipo.sv was successful.
+# Compile of tb_serial_adder.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_serial_adder -voptargs=+acc
+# vsim work.tb_serial_adder -voptargs="+acc" 
+# Start time: 16:21:28 on Feb 22,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+vsim -voptargs=+acc work.tb_serial_adder
+# End time: 16:21:49 on Feb 22,2024, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_serial_adder 
+# Start time: 16:21:49 on Feb 22,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+add wave -position insertpoint sim:/tb_serial_adder/U7/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U1/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U2/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U3/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U4/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U5/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U6/*
+run
+# Compile of dff.sv was successful.
+# Compile of fa.sv was successful.
+# Compile of fsm.sv was successful.
+# Compile of piso.sv was successful.
+# Compile of serial_adder.sv was successful.
+# Compile of sipo.sv was successful.
+# Compile of tb_serial_adder.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+run -all
+# ** Note: $finish    : /proj/assignments/serial_adder/tb_serial_adder.sv(20)
+#    Time: 430 ns  Iteration: 0  Instance: /tb_serial_adder
+# 1
+# Break in Module tb_serial_adder at /proj/assignments/serial_adder/tb_serial_adder.sv line 20
+# Compile of dff.sv was successful.
+# Compile of fa.sv was successful.
+# Compile of fsm.sv was successful.
+# Compile of piso.sv was successful.
+# Compile of serial_adder.sv was successful.
+# Compile of sipo.sv was successful.
+# Compile of tb_serial_adder.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+run -all
+# ** Note: $finish    : /proj/assignments/serial_adder/tb_serial_adder.sv(31)
+#    Time: 770 ns  Iteration: 0  Instance: /tb_serial_adder
+# 1
+# Break in Module tb_serial_adder at /proj/assignments/serial_adder/tb_serial_adder.sv line 31
+# Compile of piso.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+run -all
+# ** Note: $finish    : /proj/assignments/serial_adder/tb_serial_adder.sv(31)
+#    Time: 770 ns  Iteration: 0  Instance: /tb_serial_adder
+# 1
+# Break in Module tb_serial_adder at /proj/assignments/serial_adder/tb_serial_adder.sv line 31
+# Causality operation skipped due to absence of debug database file
+# Compile of dff.sv was successful.
+# Compile of fa.sv was successful.
+# Compile of fsm.sv was successful.
+# Compile of piso.sv was successful.
+# Compile of serial_adder.sv was successful.
+# Compile of sipo.sv was successful.
+# Compile of tb_serial_adder.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+run -all
+# ** Note: $finish    : /proj/assignments/serial_adder/tb_serial_adder.sv(31)
+#    Time: 770 ns  Iteration: 0  Instance: /tb_serial_adder
+# 1
+# Break in Module tb_serial_adder at /proj/assignments/serial_adder/tb_serial_adder.sv line 31
+vsim -voptargs=+acc work.tb_serial_adder
+# End time: 17:58:20 on Feb 22,2024, Elapsed time: 1:36:31
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.tb_serial_adder 
+# Start time: 17:58:20 on Feb 22,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+add wave -position insertpoint sim:/tb_serial_adder/U7/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U1/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U2/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U3/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U4/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U5/*
+add wave -position insertpoint sim:/tb_serial_adder/U7/U6/*
+run -all
+# ** Note: $finish    : /proj/assignments/serial_adder/tb_serial_adder.sv(31)
+#    Time: 770 ns  Iteration: 0  Instance: /tb_serial_adder
+# 1
+# Break in Module tb_serial_adder at /proj/assignments/serial_adder/tb_serial_adder.sv line 31
+# Compile of dff.sv was successful.
+# Compile of fa.sv was successful.
+# Compile of fsm.sv was successful.
+# Compile of piso.sv was successful.
+# Compile of serial_adder.sv was successful.
+# Compile of sipo.sv was successful.
+# Compile of tb_serial_adder.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_serial_adder(fast)
+# Loading work.serial_adder(fast)
+# Loading work.fsm(fast)
+# Loading work.PISO_register(fast)
+# Loading work.fa(fast)
+# Loading work.dff(fast)
+# Loading work.SIPO_register(fast)
+run -all
+# ** Note: $finish    : /proj/assignments/serial_adder/tb_serial_adder.sv(31)
+#    Time: 770 ns  Iteration: 0  Instance: /tb_serial_adder
+# 1
+# Break in Module tb_serial_adder at /proj/assignments/serial_adder/tb_serial_adder.sv line 31
+# End time: 21:09:17 on Feb 22,2024, Elapsed time: 3:10:57
+# Errors: 0, Warnings: 1

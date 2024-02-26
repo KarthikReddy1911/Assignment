@@ -1,0 +1,23 @@
+module serial_adder #(parameter WIDTH=8)(
+      	input start,clk,resetn,
+      	input [WIDTH-1:0]A,[WIDTH-1:0]B,
+      	output reg [WIDTH:0] sum);
+ 
+wire rst,en,load;
+wire Serial_Out_1,Serial_Out_2;
+wire serial_in;
+wire c_out,cin;
+
+  fsm U1(.start(start),.clk(clk),.resetn(resetn),.reset(rst),.load(load),.enable(en));
+
+  PISO_register #(WIDTH) U2(.clk(clk),.load(load),.en(en),.Parallel_In(A),.Serial_Out(Serial_Out_1));
+
+  PISO_register #(WIDTH) U3(.clk(clk),.load(load),.en(en),.Parallel_In(B),.Serial_Out(Serial_Out_2));
+  
+  fa U4(.ain(Serial_Out_1),.bin(Serial_Out_2),.cin(cin),.S_out(serial_in),.c_out(c_out));
+  
+  dff U5(.clk(clk),.rst(rst),.din(c_out),.q(cin));
+   
+  SIPO_register #(WIDTH) U6(.clk(clk),.rst(rst),.serial_in(serial_in),.en(en),.sum(sum));
+  
+endmodule
